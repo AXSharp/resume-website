@@ -46,7 +46,7 @@
   width: 50%;
   float: left;
   padding: 20px;
-  border: 2px solid red;
+  border: 2px solid yellow;
 }
 h2 {
   font-size: 25pt;
