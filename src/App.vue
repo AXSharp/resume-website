@@ -12,17 +12,14 @@
         <div class="child_title">
           <h2 class="about">A little bit about me:</h2>
           <p>
-            I remember as a child, and as a young budding naturalist, spending
-            all my time observing and testing the world around me—moving pieces,
-            altering the flow of things, and documenting ways the world
-            responded to me. Now, as an adult and a professional naturalist,
-            I’ve approached language in the same way, not from an academic point
-            of view but as a curious child still building little mud dams in
-            creeks and chasing after frogs. So this book is an odd thing: it is
-            a naturalist’s walk through the language-making landscape of the
-            English language, and following in the naturalist’s tradition it
-            combines observation, experimentation, speculation, and
-            documentation—activities we don’t normally associate with language.
+            Hi there! I'm a Mulesoft Developer at Intrum Global Technologies,
+            passionate about creating innovative solutions and enhancing the
+            user experience. When I'm not working, you can find me playing
+            volleyball or indulging in my love for video games such as Rainbow Six
+            siege and Valheim. I also have two adorable cats, one of which I
+            rescued from the streets. With a year of experience in Mulesoft
+            development, I'm always looking for new challenges and opportunities
+            to expand my skill set.
           </p>
         </div>
       </div>
@@ -34,29 +31,33 @@
 .title {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
   line-height: 35px;
   overflow: hidden;
+  background-color: #294c60;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: -30px;
 }
-.about{
+.about {
   padding-bottom: 30px;
-  
 }
 .child_title {
   width: 50%;
   float: left;
   padding: 20px;
-  border: 2px solid yellow;
+  border-radius: 0px;
 }
 h2 {
   font-size: 25pt;
-  font-family: "Inconsolata", monospace;
+  font-family: "Merriweather", serif;
   font-weight: bold;
+  letter-spacing: 3pt;
 }
-p{
+p {
   line-height: 15pt;
   font-family: "Inconsolata", monospace;
-
+  font-size: 15pt;
+  opacity: 100%;
 }
 .name {
   font-size: 30pt;
@@ -74,5 +75,8 @@ p{
 }
 .wrapper {
   padding-top: 30px;
+  border-color: green;
+  border-style: solid;
+  border-width: medium;
 }
 </style>
