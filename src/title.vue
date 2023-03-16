@@ -48,6 +48,7 @@
   padding: 30px;
   border-radius: 10px;
   margin-bottom: -30px;
+
 }
 .about {
   padding-bottom: 30px;
@@ -63,6 +64,7 @@ h2 {
   font-family: "Merriweather", serif;
   font-weight: bold;
   letter-spacing: 3pt;
+  color: #FFC49B;
 }
 p {
   line-height: 15pt;
