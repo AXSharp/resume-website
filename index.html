@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Artis Stepens</title>
-  </head>
-  <body>
-    <div id="titlePage"></div>
-    <div id="experience"></div>
-    <script type="module" src="/src/main.js"></script>
-    <script type="module" src="/src/experience.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>My Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="intro">
+        <img src="profile-picture.jpg" alt="Profile Picture">
+        <div class="intro-text">
+          <h1>John Doe</h1>
+          <h2>Front-End Developer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tortor hendrerit, bibendum felis sed, sagittis tellus. Vestibulum condimentum tellus vel bibendum commodo.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tortor hendrerit, bibendum felis sed, sagittis tellus. Vestibulum condimentum tellus vel bibendum commodo. Duis blandit enim at lacus ullamcorper fermentum. Sed vitae fermentum quam. Praesent tristique risus a nunc facilisis, id accumsan risus euismod. Fusce sit amet dui malesuada, feugiat quam et, tristique odio. Proin mattis enim at lectus finibus varius. Fusce ac malesuada velit. Nam vestibulum massa sed magna eleifend faucibus. Nam id nunc ac turpis pharetra interdum. Sed faucibus, tortor quis scelerisque molestie, nisl turpis viverra nisi, in pellentesque libero quam eget velit. Aliquam erat volutpat. Morbi pellentesque ullamcorper sapien sed gravida. Aliquam rutrum finibus neque, vitae pulvinar dolor consectetur id. Donec condimentum neque sit amet enim tempor iaculis. Sed dignissim euismod lacinia.</p>
+      </div>
+    </section>
+    
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+    </section>
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <h3>Web Developer</h3>
+              <p>ABC Company</p>
+              <p>January 2020 - Present</p>
+              <ul>
+                <li>Developed and maintained company website using React</li>
+                <li>Implemented new features and functionality on the website</li>
+                <li>Collaborated with design team to ensure consistent branding and user experience</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Web Developer Intern</h3>
+              <p>XYZ Company</p>
+              <p>June 2019 - August 2019</p>
+              <ul>
+                <li>Assisted with website development using HTML, CSS, and JavaScript</li>
+                <li>Worked with team to troubleshoot and debug issues</li>
+                <li>Learned about web development best practices and industry standards</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
