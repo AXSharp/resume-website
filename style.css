@@ -164,7 +164,15 @@ ul li p {
   color: #8dc63f;
   margin-bottom: 5px;
 }
-
+.skills-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-list ul {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @media (max-width: 500px) {
   .nav-bar {
     opacity: 0;
