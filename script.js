@@ -13,3 +13,13 @@ window.addEventListener('scroll', function() {
   const p = document.querySelector('p');
   p.classList.toggle('scrolled', window.scrollY > 0);
 });
+
+window.addEventListener('scroll', function() {
+  const h1 = document.querySelector('h1');
+  h1.classList.toggle('scrolled', window.scrollY > 0);
+});
+
+window.addEventListener('scroll', function() {
+  const img = document.querySelector('img');
+  img.classList.toggle('scrolled', window.scrollY > 0);
+});

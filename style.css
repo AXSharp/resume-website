@@ -11,6 +11,8 @@ body {
 
 header {
   background-color: #232931;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   height: 100vh;
   display: flex;
@@ -18,8 +20,12 @@ header {
   align-items: center;
   transition: height 0.5s ease;
 }
-
+.intro {
+  opacity: 1;
+}
 header.scrolled {
+  background-color: #232931;
+  background-image: none;
   height: 80px;
   position: fixed;
   top: 0;
@@ -27,6 +33,15 @@ header.scrolled {
   right: 0;
   z-index: 999;
   
+}
+
+h1.scrolled{
+  left: 30px;
+  top: 30px;
+  position: fixed;
+}
+img.scrolled{
+  opacity: 0;
 }
 h2.scrolled{
   opacity: 0;
@@ -48,7 +63,7 @@ p.scrolled{
 }
 
 header.scrolled + .intro {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 nav {
