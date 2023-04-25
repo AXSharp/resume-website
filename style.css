@@ -5,12 +5,15 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #4b4e6d;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 header {
-  background-color: #232931;
+  background-color: #493548;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   height: 100vh;
   display: flex;
@@ -20,6 +23,8 @@ header {
 }
 
 header.scrolled {
+  background-color: #493548;
+  background-image: none;
   height: 80px;
   position: fixed;
   top: 0;
@@ -27,6 +32,15 @@ header.scrolled {
   right: 0;
   z-index: 999;
   
+}
+
+h1.scrolled{
+  left: 30px;
+  top: 30px;
+  position: fixed;
+}
+img.scrolled{
+  opacity: 0;
 }
 h2.scrolled{
   opacity: 0;
@@ -40,15 +54,15 @@ p.scrolled{
 }
 .intro {
   display: flex;
+  margin-top: 400px;
+  transition: margin-top 0.5s ease;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 400px;
-  transition: margin-top 0.5s ease;
 }
 
 header.scrolled + .intro {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 nav {
@@ -67,7 +81,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #6a8d92;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -76,13 +90,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #8dc63f;
+  color: #a1e887;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+}
+
+img.scrolled {
+  opacity: 0;
 }
 
 .intro {
@@ -103,13 +121,14 @@ nav ul li a:hover {
 .intro-text h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  color: #80b192;
 }
 
 .intro-text h2 {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
-  color: #8dc63f;
+  color: #80b192;
 }
 
 section {
@@ -120,13 +139,15 @@ h2 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
-  color: #232931;
+  color: #a1e887;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #6a8d92;
+
 }
 
 ul {
@@ -137,19 +158,33 @@ ul {
 
 ul li {
   margin-bottom: 10px;
+  color: #6a8d92;
 }
 
 ul li h3 {
   font-size: 24px;
   margin-bottom: 5px;
+  color: #80b192;
 }
-
+.arrow {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+}
 ul li p {
   font-size: 16px;
-  color: #8dc63f;
+  color: #b5c2b7;
   margin-bottom: 5px;
 }
-
+.skills-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-list ul {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @media (max-width: 500px) {
   .nav-bar {
     opacity: 0;
@@ -159,4 +194,48 @@ ul li p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+  .skills-list{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills-list ul {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 250px;
+    
+  }
+
+  header {
+    text-align: center;
+  }
+  
+  /* Make everything one column */
+  .nav-bar {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Adjust some styles */
+  .intro-text {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Center #image using display: block and margin: auto */
+  #image {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+  }
+}
 }
