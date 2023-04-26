@@ -36,3 +36,16 @@ window.addEventListener("scroll", function() {
     
   }
 });
+
+window.addEventListener("scroll", function() {
+  var arrow = document.getElementsByClassName('arrow');
+  var imgPosition = arrow.getBoundingClientRect().top;
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  if (window.scrollY > 0) {
+    arrow.classList.add("scrolled");
+  } else {
+    setTimeout(function() {arrow.classList.remove("scrolled");}, 400)
+    
+  }
+});

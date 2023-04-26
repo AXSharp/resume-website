@@ -6,10 +6,8 @@
 
 body {
   background-color: #4b4e6d;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
-
 header {
   background-color: #493548;
   background-size: cover;
@@ -31,25 +29,33 @@ header.scrolled {
   left: 0;
   right: 0;
   z-index: 999;
-  
 }
 
-h1.scrolled{
+h1.scrolled {
   left: 30px;
   top: 30px;
   position: fixed;
 }
-img.scrolled{
+img.scrolled {
+  opacity: 0;
+  /* transform: rotate(180deg);
+  transition: all 0.5s ease; */
+}
+.arrow.scrolled {
+  opacity: 0;
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+h2.scrolled {
   opacity: 0;
 }
-h2.scrolled{
+img {
+  transition: all 0.3s ease;
+}
+p.scrolled {
   opacity: 0;
 }
-
-p.scrolled{
-  opacity: 0;
-}
-.about-me{
+.about-me {
   padding-top: 250px;
 }
 .intro {
@@ -99,10 +105,6 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-img.scrolled {
-  opacity: 0;
-}
-
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +149,6 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
   color: #6a8d92;
-
 }
 
 ul {
@@ -176,7 +177,7 @@ ul li p {
   color: #b5c2b7;
   margin-bottom: 5px;
 }
-.skills-list{
+.skills-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +195,7 @@ ul li p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .skills-list{
+  .skills-list {
     display: flexbox;
     flex-direction: column;
     justify-content: center;
@@ -203,19 +204,18 @@ ul li p {
     padding-left: 0px;
     padding-right: 0px;
     width: 250px;
-    
   }
 
   header {
     text-align: center;
   }
-  
+
   /* Make everything one column */
   .nav-bar {
     display: block;
     margin: 0 auto;
   }
-  
+
   .intro {
     display: flex;
     flex-direction: column;
@@ -223,13 +223,13 @@ ul li p {
     justify-content: center;
     text-align: center;
   }
-  
+
   /* Adjust some styles */
   .intro-text {
     max-width: 80%;
     margin: 0 auto;
   }
-  
+
   /* Center #image using display: block and margin: auto */
   #image {
     display: block;
@@ -237,5 +237,4 @@ ul li p {
     margin-top: 20px;
     width: 100px;
   }
-}
 }
