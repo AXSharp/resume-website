@@ -33,8 +33,14 @@ header.scrolled {
 
 h1.scrolled {
   left: 30px;
-  top: 30px;
+  top: 15px;
   position: fixed;
+}
+.jobTitle.scrolled {
+  left: 30px;
+  top: 50px;
+  position: fixed;
+  font-size: 13pt;
 }
 img.scrolled {
   opacity: 0;
@@ -45,9 +51,6 @@ img.scrolled {
   opacity: 0;
   transform: rotate(180deg);
   transition: all 0.5s ease;
-}
-h2.scrolled {
-  opacity: 0;
 }
 img {
   transition: all 0.3s ease;
@@ -103,8 +106,16 @@ nav ul li a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
-
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -236,5 +247,10 @@ ul li p {
     margin: auto;
     margin-top: 20px;
     width: 100px;
+  }
+}
+@media (prefers-reduced-motion) {
+  .container{
+    transition: none;
   }
 }
