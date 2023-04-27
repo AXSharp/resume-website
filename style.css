@@ -42,10 +42,11 @@ h1.scrolled {
   position: fixed;
   font-size: 13pt;
 }
+.logos.scrolled {
+  opacity: 0;
+}
 img.scrolled {
   opacity: 0;
-  /* transform: rotate(180deg);
-  transition: all 0.5s ease; */
 }
 .arrow.scrolled {
   opacity: 0;
@@ -69,7 +70,13 @@ p.scrolled {
   justify-content: center;
   align-items: center;
 }
-
+.logos:hover{
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-color: #493548;
+  transition: all 0s ease;
+}
 header.scrolled + .intro {
   margin-top: 100px;
 }
@@ -123,8 +130,23 @@ nav ul li a:hover {
   align-items: center;
   margin-top: 20px;
 }
-
-.intro img {
+.socialMedia {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  bottom: 35%;
+}
+.socialMedia img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.socialMedia li {
+  list-style-type: none;
+}
+.intro #profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -250,7 +272,7 @@ ul li p {
   }
 }
 @media (prefers-reduced-motion) {
-  .container{
+  .container {
     transition: none;
   }
 }

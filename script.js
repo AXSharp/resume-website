@@ -26,12 +26,6 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   var img = document.getElementById("image");
-  var imgPosition = img.getBoundingClientRect().top;
-  var scrollPosition =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop ||
-    0;
 
   if (window.scrollY > 0) {
     img.classList.add("scrolled");
@@ -43,41 +37,28 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
-  var arrow = document.getElementsByClassName("arrow");
-  var imgPosition = arrow.getBoundingClientRect().top;
-  var scrollPosition =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop ||
-    0;
+  var img = document.getElementById("logo1");
 
   if (window.scrollY > 0) {
-    arrow.classList.add("scrolled");
+    img.classList.add("scrolled");
   } else {
     setTimeout(function () {
-      arrow.classList.remove("scrolled");
+      img.classList.remove("scrolled");
     }, 400);
   }
 });
 
 window.addEventListener("scroll", function () {
-  var jobTitle = document.getElementsByClassName("jobTitle");
-  var imgPosition = jobTitle.getBoundingClientRect().top;
-  var scrollPosition =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop ||
-    0;
+  var img = document.getElementById("logo2");
 
   if (window.scrollY > 0) {
-    jobTitle.classList.add("scrolled");
+    img.classList.add("scrolled");
   } else {
     setTimeout(function () {
-      jobTitle.classList.remove("scrolled");
+      img.classList.remove("scrolled");
     }, 400);
   }
 });
-
 const observer = new IntersectionObserver((entries) =>{
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
