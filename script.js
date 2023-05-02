@@ -1,4 +1,3 @@
-// cha
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("scrolled", window.scrollY > 0);
@@ -72,3 +71,4 @@ const observer = new IntersectionObserver((entries) =>{
 
 const hiddenElements = document.querySelectorAll('.container');
 hiddenElements.forEach((el) => observer.observe(el));
+

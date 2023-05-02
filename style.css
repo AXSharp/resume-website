@@ -12,7 +12,6 @@ header {
   background-color: #493548;
   background-size: cover;
   background-position: center;
-  color: #fff;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -29,6 +28,67 @@ header.scrolled {
   left: 0;
   right: 0;
   z-index: 999;
+}
+.hamburger {
+  cursor: pointer;
+  position: fixed;
+  top: 1%;
+  right: 5%;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#nav-bar{
+  display: none;
+  transition: height 1s ease;
+}
+#nav-bar.checked{
+  display: block;
+  position: fixed;
+  top: 5%;
+  right: 6%;
+  transition: height 1s ease;
+}
+#nav-bar.checked ul li{
+  display: grid;
+  text-align: right;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.hamburger input:checked .nav-bar{
+  display: block;
 }
 
 h1.scrolled {
@@ -225,7 +285,7 @@ ul li p {
   padding-right: 30px;
 }
 @media (max-width: 600px) {
-  .nav-bar {
+  #nav-bar {
     opacity: 0;
   }
   .socialMedia {
@@ -240,7 +300,7 @@ ul li p {
     left: 0;
 
   }
-  .nav-bar li {
+  #nav-bar li {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -260,7 +320,7 @@ ul li p {
   }
 
   /* Make everything one column */
-  .nav-bar {
+  #nav-bar {
     display: block;
     margin: 0 auto;
   }
