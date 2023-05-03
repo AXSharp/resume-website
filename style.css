@@ -47,20 +47,35 @@ header.scrolled {
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#nav-bar{
+#nav-bar {
   display: none;
   transition: height 1s ease;
 }
-#nav-bar.checked{
-  display: block;
-  position: fixed;
-  top: 5%;
-  right: 6%;
+.test {
   transition: height 1s ease;
 }
-#nav-bar.checked ul li{
+#nav-bar.checked {
+  display: block;
+  position: fixed;
+  top: 6%;
+  right: 6%;
+  transition: height 1s ease;
+  background-color: #493548;
+  padding-right: 10px;
+  border-radius: 0px 0px 5px 30px;
+}
+#nav-bar.checked ul li {
   display: grid;
   text-align: right;
+}
+
+#nav-bar.checked li {
+  display: grid;
+  text-align: right;
+  /* transition: all 1s ease; */
+}
+#nav-bar.checked li {
+  transition: all 1s ease;
 }
 .line {
   fill: none;
@@ -70,9 +85,8 @@ header.scrolled {
   stroke-width: 3;
   /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .line-top-bottom {
   stroke-dasharray: 12 63;
@@ -87,7 +101,7 @@ header.scrolled {
   stroke-dashoffset: -32.42;
 }
 
-.hamburger input:checked .nav-bar{
+.hamburger input:checked .nav-bar {
   display: block;
 }
 
@@ -130,7 +144,7 @@ p.scrolled {
   justify-content: center;
   align-items: center;
 }
-.logos:hover{
+.logos:hover {
   border-style: solid;
   border-width: 4px;
   border-radius: 50%;
@@ -197,7 +211,6 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   bottom: 35%;
-  
 }
 .socialMedia img {
   width: 50px;
@@ -219,7 +232,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
   color: #80b192;
 }
-.ocupancy{
+.ocupancy {
   padding-bottom: 15px;
 }
 .intro-text h2 {
@@ -228,7 +241,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
   color: #80b192;
 }
-.cert-list{
+.cert-list {
   padding-bottom: 20px;
 }
 section {
@@ -298,7 +311,6 @@ ul li p {
     align-items: center;
     bottom: 10%;
     left: 0;
-
   }
   #nav-bar li {
     margin-top: 0.5rem;
