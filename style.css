@@ -49,33 +49,13 @@ header.scrolled {
 
 #nav-bar {
   display: none;
-  transition: height 1s ease;
-}
-.test {
-  transition: height 1s ease;
 }
 #nav-bar.checked {
-  display: block;
+  display: flex;
   position: fixed;
-  top: 6%;
-  right: 6%;
-  transition: height 1s ease;
-  background-color: #493548;
+  top: 2.5%;
+  right: 10%;
   padding-right: 10px;
-  border-radius: 0px 0px 5px 30px;
-}
-#nav-bar.checked ul li {
-  display: grid;
-  text-align: right;
-}
-
-#nav-bar.checked li {
-  display: grid;
-  text-align: right;
-  /* transition: all 1s ease; */
-}
-#nav-bar.checked li {
-  transition: all 1s ease;
 }
 .line {
   fill: none;
@@ -120,10 +100,9 @@ h1.scrolled {
   opacity: 0;
 }
 img.scrolled {
-  opacity: 0;
+ opacity: 0;
 }
 .arrow.scrolled {
-  opacity: 0;
   transform: rotate(180deg);
   transition: all 0.5s ease;
 }
@@ -187,7 +166,6 @@ nav ul li a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  opacity: 0;
   transition: all 1s;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -297,10 +275,30 @@ ul li p {
   padding-left: 30px;
   padding-right: 30px;
 }
-@media (max-width: 600px) {
-  #nav-bar {
-    opacity: 0;
+@media (max-width: 900px) {
+  #nav-bar.checked {
+    right: 0;
+    top: 6.5%;
+    background-color: #493548;
+    padding-top: 2%;
+    
   }
+  #checkbox{
+    right: 0;
+    top: 6.5%;
+    display: none;
+  }
+  #nav-bar.checked ul {
+    display: grid;
+    text-align: right;
+    padding-right: 20%;
+  }
+  
+  #nav-bar.checked li {
+    display: grid;
+  }
+  
+@media (max-width: 600px) {
   .socialMedia {
     display: flex;
     width: 100%;
@@ -311,10 +309,6 @@ ul li p {
     align-items: center;
     bottom: 10%;
     left: 0;
-  }
-  #nav-bar li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
   }
   .skills-list {
     display: flexbox;
@@ -329,12 +323,6 @@ ul li p {
 
   header {
     text-align: center;
-  }
-
-  /* Make everything one column */
-  #nav-bar {
-    display: block;
-    margin: 0 auto;
   }
 
   .intro {
@@ -360,6 +348,7 @@ ul li p {
     width: 100px;
   }
 }
+
 @media (prefers-reduced-motion) {
   .container {
     transition: none;
