@@ -2,27 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
+    <title>Artis Stepens</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <script type="text/javascript" src="functions.js"></script>
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
+      <label class="hamburger">
+        <input id="checkbox" class="checkbox" type="checkbox" onchange="cb()" />
+        <svg viewBox="0 0 32 32">
+          <path
+            class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+          ></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+      <nav id="nav-bar">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="">Contact me</a></li>
+          <li>
+            <a href="/assets/CV-Artis_Stepens.pdf" download
+              >Download my resume</a
+            >
+          </li>
+          <li><a href="documentation.html">Docuemtnation</a></li>
         </ul>
       </nav>
-      <div class="container">
+
+      <div class="container1">
         <div class="intro">
-          <img src="/assets/test.jpg" alt="Profile Picture" />
+          <img
+            id="profile-pic"
+            src="/assets/profile-pic.jpg"
+            alt="Profile Picture"
+          />
           <div class="intro-text">
             <h1>Artis Stepens</h1>
-            <h2>Middle MuleSoft Developer</h2>
+            <h2 class="jobTitle">Middle MuleSoft Developer</h2>
             <p>Be the change you wish to see in the world.</p>
+          </div>
+          <div class="socialMedia">
+            <li>
+              <a href="https://www.linkedin.com/in/artis-stepens/">
+                <span class="card"
+                  ><img
+                    id="logo1"
+                    class="logos"
+                    src="/assets/linked-in-logo.svg"
+                    alt="" /></span
+              ></a>
+              <a href="https://github.com/AXSharp"
+                ><span
+                  ><img
+                    id="logo2"
+                    class="logos"
+                    src="/assets/github-logo.svg"
+                    alt="" /></span
+              ></a>
+            </li>
           </div>
           <img
             id="image"
@@ -76,7 +117,7 @@
           <h2>Experience</h2>
           <ul>
             <li>
-              <h3>Middle MuleSoft Developer</h3>
+              <h3 class="ocupancy">Middle MuleSoft Developer</h3>
               <p>Intrum Global Technologies</p>
               <p>April 2023 - Present</p>
               <ul>
@@ -90,7 +131,7 @@
               </ul>
             </li>
             <li>
-              <h3>Junior MuleSoft Developer</h3>
+              <h3 class="ocupancy">Junior MuleSoft Developer</h3>
               <p>Intrum Global Technologies</p>
               <p>November 2022 - April 2023</p>
               <ul>
@@ -102,7 +143,7 @@
               </ul>
             </li>
             <li>
-              <h3>MuleSoft Developer Intern</h3>
+              <h3 class="ocupancy">MuleSoft Developer Intern</h3>
               <p>Accenture</p>
               <p>March 2022 - November 2022</p>
               <ul>
@@ -124,22 +165,22 @@
         <div class="container">
           <h2>Certifications</h2>
           <ul>
-            <li>
+            <li class="cert-list">
               <h3>MuleSoft Certified Developer - Level 1</h3>
               <p>April 2022 - April 2024</p>
             </li>
-            <li>
+            <li class="cert-list">
               <h3>Accenture Bootcamp</h3>
               <p>
                 Sistēmas integrācijas modernajā mākoņu vidē (Cloud Integration)
               </p>
               <p>March 2022</p>
             </li>
-            <li>
+            <li class="cert-list">
               <h3>ERASMUS + EXRECO</h3>
               <p>Germany (Wieland)</p>
             </li>
-            <li>
+            <li class="cert-list">
               <h3>ERASMUS + EXRECO</h3>
               <p>Latvia (Riga)</p>
             </li>
